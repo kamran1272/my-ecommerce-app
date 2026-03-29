@@ -1,0 +1,65 @@
+
+@tailwind base;
+@tailwind components;
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  @apply font-sans bg-neutral-light text-neutral-dark;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+video,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+h1, .heading-1 {
+  @apply font-heading text-3xl font-extrabold text-primary-dark;
+}
+h2, .heading-2 {
+  @apply font-heading text-2xl font-bold text-primary-dark;
+}
+h3, .heading-3 {
+  @apply font-heading text-xl font-semibold text-primary-dark;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.cart-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.cart {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+@media (max-width: 640px) {
+  .cart {
+    width: 100%;
+    padding: 16px;
+  }
+}
+
+@tailwind utilities;

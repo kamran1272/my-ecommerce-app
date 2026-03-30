@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
 import ErrorPage from './components/ErrorPage';
 import Footer from './components/Footer';

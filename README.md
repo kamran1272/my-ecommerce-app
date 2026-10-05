@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# My Ecommerce App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![React Router](https://img.shields.io/badge/React_Router-6-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-## Available Scripts
+A complete e-commerce storefront built with **React 18**. Product catalog, shopping cart, checkout flow, wishlist, customer authentication, order history, and an admin dashboard — all wired through React Context and React Router.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Product catalog** — browse products, product detail pages with reviews, search with a dedicated search page
+- **Shopping cart** — add/remove items, quantity controls, cart drawer, persisted via storage service
+- **Checkout flow** — multi-step checkout with shipping info and a payment gateway component
+- **Wishlist** — save products for later, synced through context
+- **Authentication** — sign up / sign in with protected routes and an auth context
+- **Orders** — order history page for customers
+- **Admin dashboard** — manage products and view store data
+- **Store pages** — home with banner carousel and promotions, about, contact, FAQ, shipping/returns/privacy/terms pages
+- **UX details** — page loader, skeleton placeholders, toast notifications, 404 page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React 18 (Create React App)
+- React Router 6 — client-side routing with protected routes
+- React Context API — auth, cart, wishlist, and toast state
+- Bootstrap 5 + react-bootstrap and Tailwind CSS — styling
+- Axios — API communication layer (`src/services/`)
 
-### `npm test`
+## Quick start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+npm start
+```
 
-### `npm run build`
+Open http://localhost:3000 to view it in the browser.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Other scripts
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm test    # run tests in watch mode
+npm run build  # production build into build/
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project structure
 
-### `npm run eject`
+- `src/pages` — routed pages (Home, Products, ProductDetails, Cart, Checkout, Wishlist, Orders, AdminDashboard, …)
+- `src/components` — reusable UI (ProductCard, Cart, Checkout, AuthForm, Header/Footer, …)
+- `src/context` — AuthContext, CartContext, WishlistContext, ToastContext
+- `src/services` — API layer (authService, productService, orderService, wishlistService, storageService)
+- `src/hooks`, `src/utils` — shared hooks and helpers
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## License
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT — see [LICENSE](LICENSE).

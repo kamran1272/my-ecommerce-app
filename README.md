@@ -2,6 +2,8 @@
 
 ![Ecommerce App](https://kamran1272.github.io/portfolio/images/projects/ecommerce.png)
 
+> 🌐 **Live demo:** https://kamran1272.github.io/my-ecommerce-app/
+
 
 ![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![React Router](https://img.shields.io/badge/React_Router-6-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
